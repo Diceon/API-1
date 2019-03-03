@@ -1,4 +1,6 @@
 <?php
+// Allowing Cross Origin Requests
+header("Access-Control-Allow-Origin: *");
 
 require_once './inc/connection.php';
 
