@@ -18,17 +18,6 @@ class connection {
             return $data;
         }
     }
-    
-    public function insert($query, $params = array()) {
-        $statement = $this->pdo->prepare($query);
-        $statement->execute($params);
-        if ($statement) {
-            return true;
-        } else {
-            printf("PDO ERROR: %s\n", $this->pdo->errorInfo());
-            exit();
-        }
-    }
 
 }
 
